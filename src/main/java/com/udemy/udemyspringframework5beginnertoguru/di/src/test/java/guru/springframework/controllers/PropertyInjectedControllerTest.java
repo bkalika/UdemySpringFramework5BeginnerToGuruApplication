@@ -1,6 +1,5 @@
 package guru.springframework.controllers;
 
-import guru.springframework.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,11 +11,11 @@ class PropertyInjectedControllerTest {
     void setUp() {
         controller = new PropertyInjectedController();
 
-        controller.greetingService = new ConstructorGreetingService();
+//        controller.greetingService = new ConstructorGreetingService();
     }
 
     @Test
     void getGreeting() {
-        System.out.println(controller.getGreeting());
+        System.out.println(controller.sayGreeting());
     }
 }
